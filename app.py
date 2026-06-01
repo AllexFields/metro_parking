@@ -10,11 +10,10 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-from core.models  import Vehicle, ParkingLot, RATE_TWO_WHEELER, RATE_FOUR_WHEELER
-from core.storage import save_session, load_sessions, daily_summary, search_vehicle_history
-from core.charts  import (capacity_donut, hourly_traffic, daily_revenue_trend,
-                           vehicle_type_split, revenue_by_type,
-                           duration_histogram, slot_heatmap)
+from models import Vehicle, ParkingLot, RATE_TWO_WHEELER, RATE_FOUR_WHEELER
+from storage import save_session, load_sessions, daily_summary, search_vehicle_history
+from charts import capacity_donut, hourly_traffic, daily_revenue_trend, \
+    vehicle_type_split, revenue_by_type, duration_histogram, slot_heatmap
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Page config  (must be first Streamlit call)
